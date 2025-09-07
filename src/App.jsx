@@ -245,7 +245,7 @@ function App() {
                   <p className="role">Co-Developer</p>
                   <p className="description">2-player, 2D puzzle platformer game</p>
                   <p>Designed and developed Maple Syrup && Pancake using Unity, implementing game mechanics (e.g., player movement, respawn, enemies, end-game conditions, etc.) with C# scripts to enhance gameplay and adjust overall difficulty.</p>
-                  <img src="/maple-syrup-pancake.png" alt="Maple Syrup && Pancake Game" className="project-image" />
+                  <img src="maple-syrup-pancake.png" alt="Maple Syrup && Pancake Game" className="project-image" />
                   <a href="https://drive.google.com/drive/folders/1Iv1H2mZSauZ9XhfRLWHbFT2JZIdauiV5" target="_blank" rel="noopener noreferrer" className="project-link">
                     View Demo, Poster, and Prototype →
                   </a>
@@ -317,7 +317,7 @@ function App() {
                       <p>Encouraged more than 10 groups of travellers arriving at Changi Airport per day to quickly disperse from the airport and prevent crowds (during the start of the pandemic) through ride-hailing services.</p>
                       <p>Developed interpersonal skills while persuading diverse groups of people to employ the ride-hailing services.</p>
                     </div>
-                    <img src="/gojek-promo.jpg" alt="PT. GO-JEK Promotion" className="gojek-image" />
+                    <img src="gojek-promo.jpg" alt="PT. GO-JEK Promotion" className="gojek-image" />
                   </div>
                 </div>
               </div>
