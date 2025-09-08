@@ -85,7 +85,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-    overflow: hidden;
+    overflow: auto;
   }
 }
 
@@ -291,6 +291,15 @@
   font-weight: 600;
   color: var(--primary);
 }
+
+.room-content .subheader {
+  margin: -0.5rem 0 0.75rem 0;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--muted-foreground);
+  font-style: italic;
+}
+
 
 .room-content p {
   margin: 0.5rem 0;
@@ -968,7 +977,7 @@
   flex: 1;
   gap: 1rem;
   padding: 1rem;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .maze-section {

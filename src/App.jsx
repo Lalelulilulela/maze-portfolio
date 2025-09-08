@@ -192,7 +192,8 @@ function App() {
               <h2>👤 Profile</h2>
               <div className="profile-content">
                 <div className="avatar">🐣</div>
-                <h3>Computer Science Student</h3>
+                <h3>Tan Yi Jing</h3>
+                <p className="subheader">Y4 Computer Science undergradute @ NUS</p>
                 <p>Welcome to my interactive portfolio! Navigate through the maze to discover my education, projects, experience, and contact information.</p>
                 <p>Use arrow keys or WASD to move around the maze. Press ESC to close this room.</p>
               </div>
@@ -403,7 +404,7 @@ function App() {
   return (
     <div className="app">
       <div className="header">
-        <h1>Portfolio Maze</h1>
+        <h1>Tan Yi Jing's Portfolio Maze</h1>
         <p>Navigate with arrow keys or WASD • Find the rooms to explore my portfolio</p>
         <button 
           className="flatten-button"
