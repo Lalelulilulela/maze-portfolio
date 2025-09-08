@@ -216,9 +216,10 @@ function App() {
                   <p><strong>Skills:</strong></p>
                   <ul>
                     <li><strong>Programming Languages:</strong> Java, C, C#, Python</li>
-                    <li><strong>Version Control & Dev Tools:</strong> Git, GitHub, Docker</li>
-                    <li><strong>Game Development & Simulation:</strong> Unity, YOLO, Ultralytics YOLO, DeepStream</li>
-                    <li><strong>Networking & APIs:</strong> MQTT, Flask API</li>
+                    <li><strong>Version Control:</strong> Git, GitHub, Docker</li>
+                    <li><strong>Game Development:</strong> Unity</li>
+                    <li><strong>Machine Learning & Vision:</strong> Ultralytics YOLO, DeepStream</li>
+                    <li><strong>Networking & APIs:</strong> MQTT, Flask, REST APIs</li>
                   </ul>
                   <p><strong>Hobbies:</strong> Playing games (e.g. Brawl Stars), watching shows, sleeping</p>
                 </div>
