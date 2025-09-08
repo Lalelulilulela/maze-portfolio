@@ -175,6 +175,24 @@ function App() {
   
   // Room content components
   const renderRoomContent = () => {
+
+    // Close room on ESC key
+    useEffect(() => {
+      const handleEsc = (event) => {
+        if (event.key === "Escape") {
+          setCurrentRoom(null);
+        }
+      };
+
+      if (currentRoom) {
+        window.addEventListener("keydown", handleEsc);
+      }
+
+      return () => {
+        window.removeEventListener("keydown", handleEsc);
+      };
+    }, [currentRoom, setCurrentRoom]);
+    
     if (!currentRoom) return null
     
     return (
@@ -404,7 +422,7 @@ function App() {
   return (
     <div className="app">
       <div className="header">
-        <h1>Tan Yi Jing's Portfolio Maze</h1>
+        <h1>Welcome to Tan Yi Jing's Portfolio Maze</h1>
         <p>Navigate with arrow keys or WASD • Find the rooms to explore my portfolio</p>
         <button 
           className="flatten-button"
