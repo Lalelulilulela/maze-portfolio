@@ -1407,6 +1407,9 @@
   align-items: center;
   justify-content: space-between; /* Distributes space between text and image */
   margin-top: 10px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .project-text-content {
@@ -1416,7 +1419,7 @@
 
 /* Project image styling */
 .project-image {
-  width: 200px; 
+  width: 200px;   
   height: auto;
   border-radius: 8px;
   border: 2px solid var(--primary);
@@ -1437,6 +1440,9 @@
   align-items: center;
   justify-content: space-between; /* Distributes space between text and image */
   margin-top: 10px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .gojek-text-content {
@@ -1445,7 +1451,8 @@
 }
 
 .gojek-image {
-  width: 100px; 
+  max-width: 100px;
+  width: 100%; 
   height: auto;
   border-radius: 8px;
   border: 2px solid var(--primary);
