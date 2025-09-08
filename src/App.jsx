@@ -192,7 +192,7 @@ function App() {
         window.removeEventListener("keydown", handleEsc);
       };
     }, [currentRoom, setCurrentRoom]);
-    
+
     if (!currentRoom) return null
     
     return (
@@ -211,9 +211,17 @@ function App() {
               <div className="profile-content">
                 <div className="avatar">🐣</div>
                 <h3>Tan Yi Jing</h3>
-                <p className="subheader">Y4 Computer Science undergradute @ NUS</p>
-                <p>Welcome to my interactive portfolio! Navigate through the maze to discover my education, projects, experience, and contact information.</p>
-                <p>Use arrow keys or WASD to move around the maze. Press ESC to close this room.</p>
+                <p className="subheader">Y4 Computer Science undergraduate @ NUS</p>
+                <div className="profile-text">
+                  <p><strong>Skills:</strong></p>
+                  <ul>
+                    <li><strong>Programming Languages:</strong> Java, C, C#, Python</li>
+                    <li><strong>Version Control & Dev Tools:</strong> Git, GitHub, Docker</li>
+                    <li><strong>Game Development & Simulation:</strong> Unity, YOLO, Ultralytics YOLO, DeepStream</li>
+                    <li><strong>Networking & APIs:</strong> MQTT, Flask API</li>
+                  </ul>
+                  <p><strong>Hobbies:</strong> Playing games (e.g. Brawl Stars), watching shows, sleeping</p>
+                </div>
               </div>
             </div>
           )}
@@ -263,8 +271,12 @@ function App() {
                   <p className="duration">Apr 2023 - Jul 2023</p>
                   <p className="role">Co-Developer</p>
                   <p className="description">2-player, 2D puzzle platformer game</p>
-                  <p>Designed and developed Maple Syrup && Pancake using Unity, implementing game mechanics (e.g., player movement, respawn, enemies, end-game conditions, etc.) with C# scripts to enhance gameplay and adjust overall difficulty.</p>
-                  <img src="maple-syrup-pancake.png" alt="Maple Syrup && Pancake Game" className="project-image" />
+                  <div className="project-flex-container">
+                    <div className="project-text-content">
+                      <p>Designed and developed Maple Syrup && Pancake using Unity, implementing game mechanics (e.g., player movement, respawn, enemies, end-game conditions, etc.) with C# scripts to enhance gameplay and adjust overall difficulty.</p>
+                    </div>
+                    <img src="maple-syrup-pancake.png" alt="Maple Syrup && Pancake Game" className="project-image" />
+                  </div>
                   <a href="https://drive.google.com/drive/folders/1Iv1H2mZSauZ9XhfRLWHbFT2JZIdauiV5" target="_blank" rel="noopener noreferrer" className="project-link">
                     View Demo, Poster, and Prototype →
                   </a>
@@ -347,23 +359,50 @@ function App() {
             <div className="room-contact">
               <h2>📧 Contact</h2>
               <div className="contact-content">
-                <p>Let\'s connect! Here\'s how you can reach me:</p>
+                <p>Let's connect! Here's how you can reach me:</p>
                 <div className="contact-methods">
                   <div className="contact-item">
                     <span className="contact-icon">📞</span>
-                    <span>Mobile: +65 8652 1826</span>
+                    <span>
+                      <a href="tel:+6586521826">
+                        +65 8652 1826
+                      </a>
+                    </span>
                   </div>
                   <div className="contact-item">
                     <span className="contact-icon">📧</span>
-                    <span>Email: tan.y.j.2003@gmail.com</span>
+                    <span>
+                      Email:{" "}
+                      <a href="mailto:tan.y.j.2003@gmail.com">
+                        tan.y.j.2003@gmail.com
+                      </a>
+                    </span>
                   </div>
                   <div className="contact-item">
                     <span className="contact-icon">💼</span>
-                    <span>LinkedIn: www.linkedin.com/in/tyj-lalelulilulela</span>
+                    <span>
+                      LinkedIn:{" "} 
+                      <a 
+                        href="https://www.linkedin.com/in/tyj-lalelulilulela" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        www.linkedin.com/in/tyj-lalelulilulela
+                      </a>
+                    </span>
                   </div>
                   <div className="contact-item">
                     <span className="contact-icon">🐙</span>
-                    <span>GitHub: https://github.com/Lalelulilulela</span>
+                    <span>
+                      GitHub:{" "}
+                      <a 
+                        href="https://github.com/Lalelulilulela" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                      https://github.com/Lalelulilulela
+                      </a>
+                      </span>
                   </div>
                 </div>
               </div>

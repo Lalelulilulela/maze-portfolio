@@ -45,7 +45,7 @@ const TouchControls = ({ onMove, disabled }) => {
           <ChevronLeft size={24} />
         </button>
         <div className="touch-center">
-          <div className="player-indicator">🧑‍💻</div>
+          <div className="player-indicator">🐣</div>
         </div>
         <button 
           className="touch-btn touch-btn-right"

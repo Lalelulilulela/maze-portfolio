@@ -321,6 +321,9 @@
 .profile-content {
   text-align: center;
 }
+.profile-text {
+  text-align: left;
+}
 
 .avatar {
   font-size: 4rem;
@@ -1398,15 +1401,27 @@
   100% { transform: translateY(4px); }
 }
 
+
+.project-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distributes space between text and image */
+  margin-top: 10px;
+}
+
+.project-text-content {
+  flex: 1; /* Allows text to take available space */
+  margin-right: 20px; /* Space between text and image */
+}
+
 /* Project image styling */
 .project-image {
-  width: 100%;
-  max-width: 400px;
+  width: 200px; 
   height: auto;
   border-radius: 8px;
   border: 2px solid var(--primary);
-  box-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
-  margin: 1rem 0;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.3);
+  margin-left: 20px; /* Add some space between text and image */
   transition: all 0.3s ease;
 }
 
@@ -1430,7 +1445,7 @@
 }
 
 .gojek-image {
-  width: 100px; /* Make it tiny */
+  width: 100px; 
   height: auto;
   border-radius: 8px;
   border: 2px solid var(--primary);
